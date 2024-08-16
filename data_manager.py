@@ -4,7 +4,7 @@ import os
 
 load_dotenv()
 
-SHEETY_ENDPOINT = 'https://api.sheety.co/bc6f38f6543a11b5cfa609fc810f343a/joelsFlightSheet/sheet1'
+SHEETY_ENDPOINT = 'https://api.sheety.co/bc6f38f6543a11b5cfa609fc810f343a/joelsFlightSheet/prices'
 
 class DataManager:
 
@@ -20,7 +20,7 @@ class DataManager:
         response = requests.get(self.get_url, headers=self.headers)
         response.raise_for_status()
         data = response.json()
-        self.destination_data = data["sheet1"]
+        self.destination_data = data["prices"]
         return self.destination_data
 
     def update_destination_codes(self):
