@@ -7,7 +7,7 @@ load_dotenv()
 
 TOKEN_ENDPOINT = 'https://test.api.amadeus.com/v1/security/oauth2/token'
 IATA_ENDPOINT = "https://test.api.amadeus.com/v1/reference-data/locations/cities"
-FLIGHT_ENDPOINT = "https://test.api.amadeus.com/v2/shpooing/flight-offers"
+FLIGHT_ENDPOINT = "https://test.api.amadeus.com/v2/shopping/flight-offers"
 
 # current_date = datetime.now()
 # tomorrow = current_date + timedelta(1)
